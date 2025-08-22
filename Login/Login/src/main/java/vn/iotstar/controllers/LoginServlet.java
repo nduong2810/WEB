@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
         String user = req.getParameter("username");
         String pass = req.getParameter("password");
 
-        if ("tai".equals(user) && "123".equals(pass)) {
+        if ("duong".equals(user) && "12345".equals(pass)) {
             // Tạo cookie
             Cookie cookie = new Cookie("username", user);
             cookie.setMaxAge(30); // tồn tại 30s
@@ -36,3 +36,4 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
+
